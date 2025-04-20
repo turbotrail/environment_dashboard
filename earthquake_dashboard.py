@@ -56,6 +56,11 @@ from datetime import datetime, timedelta
 # === App Config ===
 st.set_page_config(page_title="🌍 Earthquake Tracker", layout="wide")
 st.title("🌍 Real-Time Earthquake Tracker")
+st.markdown("""
+**Data Sources:**
+- Earthquake data from [USGS Earthquake Catalog API](https://earthquake.usgs.gov/fdsnws/event/1/)
+- Volcano data (optional upload) based on [NOAA NGDC Hazard Services](https://www.ngdc.noaa.gov/hazel/view/hazards/volcano/event-data)
+""")
 
 # === Sidebar Filters ===
 st.sidebar.header("🔎 Filter Earthquakes")
